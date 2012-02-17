@@ -28,7 +28,7 @@ struct foo
 {};
 ```
 
-####Compare to a concatenative approach using SMPL:
+Compare to a concatenative approach using SMPL:
 
 ```cpp
 struct foo : word<filter, length, square, int_<5>, add> {};
