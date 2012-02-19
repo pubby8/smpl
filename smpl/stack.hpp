@@ -189,7 +189,7 @@ typename stack_take<typename Stack::macro(pop)::type, N - 1>\
         struct bottom {
           SMPL_IMPL_STATIC_TEMPLATE_ERROR(
             Dummy,
-            "accessing top of empty stack"); // technically bottom - it works
+            "accessing top of empty rstack"); // technically bottom - it works
         };
         template <typename T>
         struct push {
@@ -203,7 +203,7 @@ typename stack_take<typename Stack::macro(pop)::type, N - 1>\
         struct erase_bottom {
           SMPL_IMPL_STATIC_TEMPLATE_ERROR(
             Dummy,
-            "popping top of empty stack"); // technically bottom - it works
+            "popping top of empty rstack"); // technically bottom - it works
         };
       };
       
